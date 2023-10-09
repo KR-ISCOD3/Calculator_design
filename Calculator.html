@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Calculator/Calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid py-1">
+        <div class="all1">
+            <input type="text" class="in1 my-0" placeholder="none" readonly> 
+            <input type="text" class="in2" id="data" placeholder="0" >
+        </div>
+        <div class="all">
+            <button onclick="Clear()">C</button>
+            <button onclick="Percent()">%</button>
+            <button onclick="Sqrt()"><sup class="sup1">2</sup><i class="fa-solid fa-square-root-variable"></i></button>
+            <button onclick="Pow()">x <sup class="sup2">2</sup></button>
+        </div>
+        <div class="all">
+            <button onclick="data(7)">7</button>
+            <button onclick="data(8)">8</button>
+            <button onclick="data(9)">9</button>
+            <button onclick="data(' / ')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="all">
+            <button onclick="data(4)">4</button>
+            <button onclick="data(5)">5</button>
+            <button onclick="data(6)">6</button>
+            <button onclick="data(' * ')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="all">
+            <button onclick="data(1)">1</button>
+            <button onclick="data(2)">2</button>
+            <button onclick="data(3)">3</button>
+            <button onclick="data(' + ')"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="all">
+            <button onclick="Absolute()">+/-</button>
+            <button onclick="data(0)">0</button>
+            <button onclick="data('.')">.</button>
+            <button onclick="data(' - ')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div class="all">
+            <button class="result" onclick="Calculate()"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+</body>
+<script src="../Calculator/Calculator.js"></script>
+</html>
